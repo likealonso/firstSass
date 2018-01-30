@@ -1,1 +1,22 @@
-h1{color:blue;font-family:Helvetica;font-size:40pt;font-weight:bold}section article h2{color:red}section article p{color:grey}section article#article-1{background-color:yellow}section article#article-2 a{color:purple}section article#article-2 a:hover{color:green}body:hover section article#article-2{background-color:black}
+h1 {
+  color: blue;
+  font-family: Helvetica;
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+section {
+  font-family: Helvetica;
+}
+
+section article h2 {
+  color: #b64926;
+}
+
+section article p {
+  color: #468966;
+}
+
+section article#article-1 {
+  background-color: #fff0a5;
+}

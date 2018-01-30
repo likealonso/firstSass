@@ -1,23 +1,30 @@
-h1{
+$font-one: Helvetica;
+$red: #b64926;
+$yellow: #fff0a5;
+$green: #468966;
+
+h1 {
     color:blue;
     font: {
-        family: Helvetica;
+        family: $font-one;
         size: 40pt;
         weight: bold
     }
 }
+//section area
 section {
+    font-family: $font-one;
     article {
-        h2 { color:red }
-        p { color:grey }
-        &#article-1 { background-color: yellow }
-        &#article-2 { 
-            a { color: purple;
-                &:hover { color: green; }
-            }
-        }
-        body:hover &#article-2 {
-            background-color: black
-        }
+        h2 { color:$red }
+        p { color:$green }
+        &#article-1 { background-color: $yellow }
+        // &#article-2 { 
+        //     a { color: purple;
+        //         &:hover { color: green; }
+        //     }
+        // }
+        // body:hover &#article-2 {
+        //     background-color: black
+        // }
     }
 }

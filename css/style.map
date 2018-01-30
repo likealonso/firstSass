@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"h1{\n    color:blue;\n    font: {\n        family: Helvetica;\n        size: 40pt;\n        weight: bold\n    }\n}\nsection {\n    article {\n        h2 { color:red }\n        p { color:grey }\n        &#article-1 { background-color: yellow }\n        &#article-2 { \n            a { color: purple;\n                &:hover { color: green; }\n            }\n        }\n        body:hover &#article-2 {\n            background-color: black\n        }\n    }\n}"
+	],
+	"mappings": ";AAAA,AAAA,EAAE,CAAA;EACE,KAAK,EAAC,IAAK;EACX,IAAI,AAAC,CAAC,AACF,MAAM,EAAE,SAAU;EADtB,IAAI,AAAC,CAAC,AAEF,IAAI,EAAE,IAAK;EAFf,IAAI,AAAC,CAAC,AAGF,MAAM,EAAE,IACX;CACJ;;;AACD,AAEQ,OAFD,CACH,OAAO,CACH,EAAE,CAAC;EAAE,KAAK,EAAC,GAAK;CAAE;;;AAF1B,AAGQ,OAHD,CACH,OAAO,CAEH,CAAC,CAAC;EAAE,KAAK,EAAC,IAAM;CAAE;;;AAH1B,AACI,OADG,CACH,OAAO,AAGF,UAAU,CAAC;EAAE,gBAAgB,EAAE,MAAQ;CAAE;;;AAJlD,AAMY,OANL,CACH,OAAO,AAIF,UAAU,CACP,CAAC,CAAC;EAAE,KAAK,EAAE,MAAO;CAEjB;;;AARb,AAMY,OANL,CACH,OAAO,AAIF,UAAU,CACP,CAAC,AACI,MAAM,CAAC;EAAE,KAAK,EAAE,KAAM;CAAI;;;AAGnC,AATJ,IASQ,AAAA,MAAM,CAVlB,OAAO,CACH,OAAO,AASS,UAAU,CAAC;EACnB,gBAAgB,EAAE,KACrB;CAAC",
+	"names": []
+}
