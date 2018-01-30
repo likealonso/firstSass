@@ -7,7 +7,17 @@ h1{
     }
 }
 section {
-    h2{color:red}
-     p{color:black}
+    article {
+        h2 { color:red }
+        p { color:grey }
+        &#article-1 { background-color: yellow }
+        &#article-2 { 
+            a { color: purple;
+                &:hover { color: green; }
+            }
+        }
+        body:hover &#article-2 {
+            background-color: black
+        }
+    }
 }
-aside p {color:orange}
