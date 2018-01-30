@@ -1,5 +1,13 @@
-$red: red;
-body {font-family:Helvetica}
-h1{color:$red}
-p{color:green}
-p:hover{color:orange}
+h1{
+    color:blue;
+    font: {
+        family: Helvetica;
+        size: 40pt;
+        weight: bold
+    }
+}
+section {
+    h2{color:red}
+     p{color:black}
+}
+aside p {color:orange}
