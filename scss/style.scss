@@ -23,7 +23,7 @@ h1 {
 section {
     font-family: $font-one;
     article {
-        h2 { color: myFunction($hsla, .6) }
+        h2 { color: darken(myFunction($hsla, .6), 30%) }
         p { color: myFunction($green, .7) }
         &#article-1 { background-color: myFunction($yellow, .9) }
     }
