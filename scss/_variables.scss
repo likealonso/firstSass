@@ -2,18 +2,20 @@
 $font-one: 'Helvetica Neue';
 
 //colors
-$red: #b64926;
-$yellow: #fff0a5;
-$green: #468966;
-$grey: rgba(200, 200, 200, .5);
+$colors: (
+    redo: #b64926,
+    yellowo: #fff0a5,
+    greeno: #468966,
+    grayo: rgba(200, 200, 200, .5)
+);
 $hue: 300; $sat: 50; $light: 50; $alpha: .5;
 $hsla: hsla($hue, $sat, $light, $alpha);
-$contrasted-light-default: $yellow;
+$contrasted-light-default: map-get($colors, yellow);
 
 //string
 $string: ' Alonso is here';
 
 //functions
-@function myFunction($color, $alpha) {
-    @return hsla(hue($color), 70, lightness($color), $alpha);
-}
+// @function myFunction($color, $alpha) {
+//     @return hsla(hue($color), 70, lightness($color), $alpha);
+// }

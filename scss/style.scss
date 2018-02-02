@@ -16,15 +16,15 @@ h1 {
 section {
     .link {
         font-family: $font-one;
-        background: darken($yellow, 20%);
-        color: $red;
+        background: darken(map-get($colors, yellowo), 20%);
+        color: map-get($colors, redo);
         @include border-corner-radius(top, left, 15px);
         padding: 5px 10px;
         margin: 10px 0;
     }
 
     article {
-        background: lighten($yellow, 10%);
+        background: lighten(map-get($colors, yellowo), 10%);
         @include border-radius(25px);
         @include box-shadow(blue 2px 2px 10px);
         padding: 5px 10px;
@@ -32,15 +32,15 @@ section {
 
         h2 { 
             @include heading-font(20px, bolder);
-            color: $red;
+            color: map-get($colors, redo);
         }
         &#article-1 { 
             background: purple;
             p, h2 { @include contrasted(purple); }
         }
         p { 
-            color: $green;
-            @include contrasted(lighten($yellow, 10%)) 
+            color: map-get($colors, greeno);
+            @include contrasted(map-get($colors, yellowo), 10%) 
         }
         a { @extend .link; color: blue }
     }
