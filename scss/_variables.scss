@@ -1,5 +1,5 @@
 //fonts
-$font-one: Helvetica;
+$font-one: 'Helvetica Neue';
 
 //colors
 $red: #b64926;
@@ -8,6 +8,7 @@ $green: #468966;
 $grey: rgba(200, 200, 200, .5);
 $hue: 300; $sat: 50; $light: 50; $alpha: .5;
 $hsla: hsla($hue, $sat, $light, $alpha);
+$contrasted-light-default: $yellow;
 
 //string
 $string: ' Alonso is here';
