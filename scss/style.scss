@@ -1,24 +1,5 @@
-$font-one: Helvetica;
-$red: #b64926;
-$yellow: #fff0a5;
-$green: #468966;
-$grey: rgba(200, 200, 200, .5);
-$hue: 300; $sat: 50; $light: 50; $alpha: .5;
-$hsla: hsla($hue, $sat, $light, $alpha);
-$string: ' Alonso is here';
-@function myFunction($color, $alpha) {
-    @return hsla(hue($color), 70, lightness($color), $alpha);
-}
-
-@mixin heading-font($font-size: 20px, $bold: normal) {
-    &:after { content: $string }
-    color: myFunction($grey, .7);
-    font: {
-        family: $font-one;
-        size: $font-size;
-        weight: $bold
-    }
-}
+@import "variables.scss";
+@import "mixins.scss";
 
 h1 {
     @include heading-font(40px, normal)

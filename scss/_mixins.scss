@@ -1,0 +1,9 @@
+@mixin heading-font($font-size: 20px, $bold: normal) {
+    &:after { content: $string }
+    color: myFunction($grey, .7);
+    font: {
+        family: $font-one;
+        size: $font-size;
+        weight: $bold
+    }
+}

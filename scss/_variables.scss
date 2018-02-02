@@ -1,0 +1,18 @@
+//fonts
+$font-one: Helvetica;
+
+//colors
+$red: #b64926;
+$yellow: #fff0a5;
+$green: #468966;
+$grey: rgba(200, 200, 200, .5);
+$hue: 300; $sat: 50; $light: 50; $alpha: .5;
+$hsla: hsla($hue, $sat, $light, $alpha);
+
+//string
+$string: ' Alonso is here';
+
+//functions
+@function myFunction($color, $alpha) {
+    @return hsla(hue($color), 70, lightness($color), $alpha);
+}
