@@ -10,20 +10,26 @@ $string: ' Alonso is here';
     @return hsla(hue($color), 70, lightness($color), $alpha);
 }
 
-h1 {
+@mixin heading-font($font-size: 20px, $bold: normal) {
     &:after { content: $string }
     color: myFunction($grey, .7);
     font: {
         family: $font-one;
-        size: 40pt;
-        weight: bold
+        size: $font-size;
+        weight: $bold
     }
+}
+
+h1 {
+    @include heading-font(40px, normal)
 }
 //section area
 section {
     font-family: $font-one;
     article {
-        h2 { color: darken(myFunction($hsla, .6), 30%) }
+        h2 { 
+            @include heading-font(20px, bolder) 
+        }
         p { color: myFunction($green, .7) }
         &#article-1 { background-color: lighten(myFunction($yellow, .9), 10%) }
     }
