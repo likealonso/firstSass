@@ -1,13 +1,12 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "compass";
 
-%corners {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px
-}
-
-
+// %corners {
+//     -webkit-border-radius: 5px;
+//     -moz-border-radius: 5px;
+//     border-radius: 5px
+// }
 
 h1 {
     @include heading-font(40px, normal)
@@ -18,14 +17,14 @@ section {
         font-family: $font-one;
         background: darken($yellow, 20%);
         color: $red;
-        @extend %corners;
+        @include border-corner-radius(top, left, 15px);
         padding: 5px 10px;
         margin: 10px 0;
     }
 
     article {
         background: lighten($yellow, 10%);
-        @extend %corners;
+        @include border-radius(25px);
         padding: 5px 10px;
         margin: 10px 0;
 
