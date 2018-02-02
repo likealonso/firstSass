@@ -1,17 +1,40 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+%corners {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+
+
 h1 {
     @include heading-font(40px, normal)
 }
 //section area
 section {
-    font-family: $font-one;
+    .link {
+        font-family: $font-one;
+        background: darken($yellow, 20%);
+        color: $red;
+        @extend %corners;
+        padding: 5px 10px;
+        margin: 10px 0;
+    }
+
     article {
+        background: lighten($yellow, 10%);
+        @extend %corners;
+        padding: 5px 10px;
+        margin: 10px 0;
+
         h2 { 
-            @include heading-font(20px, bolder) 
+            @include heading-font(20px, bolder);
+            color: $red;
         }
-        p { color: myFunction($green, .7) }
+        p { color: $green }
         &#article-1 { background-color: lighten(myFunction($yellow, .9), 10%) }
+        a { @extend .link; color: blue }
     }
 }
